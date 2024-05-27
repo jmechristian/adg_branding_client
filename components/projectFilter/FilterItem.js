@@ -17,7 +17,7 @@ const FilterItem = ({ name, index, setActiveTab, value, closeMobile }) => {
     <>
       <div
         ref={tabRef}
-        className='text-xl xl:text-base font-bold xl:font-normal text-white xl:text-gray-500 px-4 my-2 relative w-full cursor-pointer'
+        className='text-xl xl:text-base font-bold xl:font-normal text-white xl:text-gray-500 px-4 my-2 relative w-full cursor-pointer whitespace-nowrap'
         key={index}
         onClick={tabChangeHandler}
       >

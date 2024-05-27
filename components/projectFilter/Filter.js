@@ -26,7 +26,7 @@ const Filter = () => {
 
   return (
     <div className='flex w-full justify-between items-center relative'>
-      <div className='flex items-end flex-1 xl:items-center'>
+      <div className='flex items-end flex-1 xl:items-center w-full'>
         <div className='text-gray-800 font-brand-bold text-xl md:text-2xl lg:text-3xl lg:mr-1 xl:mr-4'>
           Projects
         </div>
