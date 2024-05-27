@@ -27,7 +27,7 @@ const ProjectGrid = () => {
           hero={
             proj.attributes.hero.data
               ? proj.attributes.hero.data.attributes.url
-              : ''
+              : 'https://adg-projects.nyc3.digitaloceanspaces.com/d510c4975f36df4b67a706957c4cf046.png'
           }
           key={proj.id}
         />
