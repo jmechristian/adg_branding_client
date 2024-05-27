@@ -56,7 +56,7 @@ const RelatedProjects = ({ subCat, projId }) => {
           >
             Related Projects
           </motion.div>
-          {relatedproj && (
+          {/* {relatedproj && (
             <motion.div
               className='w-full grid md:grid-cols-3 gap-6 related-project pt-6'
               initial={{ opacity: 0 }}
@@ -73,7 +73,7 @@ const RelatedProjects = ({ subCat, projId }) => {
                 />
               ))}
             </motion.div>
-          )}
+          )} */}
         </InnerContainer>
       </Container>
     </div>

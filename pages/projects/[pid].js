@@ -53,7 +53,7 @@ const Index = ({ project, pid }) => {
       <Container>
         <ProjectHeader
           title={name}
-          hero={hero}
+          hero={hero ? hero : ''}
           location={location}
           caption={hero_caption ? hero_caption : ''}
         />

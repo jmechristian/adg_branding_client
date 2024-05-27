@@ -24,7 +24,11 @@ const ProjectGrid = () => {
           name={proj.attributes.name}
           location={proj.attributes.location}
           id={proj.id}
-          hero={proj.attributes.hero.data.attributes.url}
+          hero={
+            proj.attributes.hero.data
+              ? proj.attributes.hero.data.attributes.url
+              : ''
+          }
           key={proj.id}
         />
       ))}

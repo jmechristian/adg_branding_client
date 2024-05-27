@@ -43,12 +43,12 @@ const ProjectHeader = ({ title, location, hero, caption }) => {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-        <img
+        {/* <img
           src={hero.data.attributes.url}
           id={hero.data.attributes.hash}
           data-caption={hero.data.attributes.caption}
           className='imageArray'
-        />
+        /> */}
         <div>
           <Watermark />
           <AnimatePresence>
@@ -59,10 +59,10 @@ const ProjectHeader = ({ title, location, hero, caption }) => {
                 transition={{ duration: 0.5, ease: 'easeOut' }}
                 exit={{ opacity: 0 }}
               >
-                <EnlargeButton
+                {/* <EnlargeButton
                   imageId={hero.data.attributes.hash}
                   caption={hero.data.attributes.caption}
-                />
+                /> */}
               </motion.div>
             )}
           </AnimatePresence>
