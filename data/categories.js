@@ -4,12 +4,16 @@ export const categories = [
     value: 'corporate',
   },
   {
-    name: 'Multi-Family',
-    value: 'multifamily',
+    name: 'Apartments',
+    value: 'apartments',
   },
   {
-    name: 'Identity',
-    value: 'identity',
+    name: 'Condominiums & Townhomes',
+    value: 'condos',
+  },
+  {
+    name: 'Non-Profit',
+    value: 'nonprofit',
   },
   // {
   //   name: 'Models',

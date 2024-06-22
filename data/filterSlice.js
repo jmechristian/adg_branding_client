@@ -4,7 +4,7 @@ export const filterSlice = createSlice({
   name: 'project',
   initialState: {
     allProjects: [],
-    filterValue: { name: 'Apartments', value: 'Apartment' },
+    filterValue: { name: 'Corporate', value: 'corporate' },
     filteredGrid: [],
   },
   reducers: {
@@ -15,11 +15,13 @@ export const filterSlice = createSlice({
       state.filterValue = action.payload;
     },
     setFilteredGrid: (state, action) => {
-      state.filteredGrid = state.allProjects.filter(
-        (proj) =>
-          proj.attributes.building_type.data.attributes.type ===
-          state.filterValue.value
-      );
+      state.filteredGrid = state.allProjects.filter((project) => {
+        const projectTypes = project.attributes.project_types.data;
+        return projectTypes.some(
+          (projectType) =>
+            projectType.attributes.type === state.filterValue.name
+        );
+      });
     },
   },
 });

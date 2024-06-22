@@ -10,6 +10,7 @@ export default function Home({ allProjects, mapPins }) {
 
   useEffect(() => {
     dispatch(setAllprojects(allProjects));
+    console.log(allProjects);
     dispatch(setMapPins(mapPins));
   }, []);
 
@@ -22,7 +23,7 @@ export default function Home({ allProjects, mapPins }) {
 
 export async function getStaticProps() {
   const res = await axios.get(
-    'https://adg-projects-hs6ir.ondigitalocean.app/api/projects?filters[department][name][$eq]=Branding&fields[0]=name&fields[1]=location&fields[2]=grid_order&populate[0]=hero&populate[1]=building_type'
+    'https://adg-projects-hs6ir.ondigitalocean.app/api/projects?filters[department][name][$eq]=Branding&fields[0]=name&fields[1]=location&fields[2]=grid_order&populate[0]=hero&populate[1]=project_types'
   );
 
   const allProjects = res.data.data;

@@ -22,7 +22,7 @@ const LandingHero = () => {
       className='w-full aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 mt-10 mb-12'
       style={{
         backgroundImage: `url(
-          'https://adg-projects.nyc3.digitaloceanspaces.com/79c0da0e3f8f4fe941e2b5ab8be06678.webp'
+          '/skateboard-cats.webp'
         )`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -43,10 +43,10 @@ const LandingHero = () => {
           className='font-brand-serif text-white text-3xl lg:text-4xl xl:text-5xl xl:leading-tight leading-tight'
           ref={addToHeaderTextRef}
         >
-          We specialize in the <span className='italic'>details.</span>
+          These are skateboarding <span className='italic'>cats.</span>
         </h1>
         <h1 className='font-brand-bold text-white text-3xl lg:text-4xl xl:text-5xl xl:leading-tight leading-tight'>
-          Creating heartfelt interiors that inspire and connect.
+          We should probably put something else here? Or just roll with it?
         </h1>
       </motion.div>
     </motion.div>
