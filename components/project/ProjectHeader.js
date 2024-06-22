@@ -43,12 +43,12 @@ const ProjectHeader = ({ title, location, hero, caption }) => {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-        {/* <img
+        <img
           src={hero.data.attributes.url}
           id={hero.data.attributes.hash}
           data-caption={hero.data.attributes.caption}
           className='imageArray'
-        /> */}
+        />
         <div>
           <Watermark />
           <AnimatePresence>

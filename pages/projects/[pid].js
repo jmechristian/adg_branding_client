@@ -57,7 +57,7 @@ const Index = ({ project, pid }) => {
           location={location}
           caption={hero_caption ? hero_caption : ''}
         />
-        <InnerContainer>
+        {/* <InnerContainer>
           <ProjectModernAllInfo
             id={id}
             dividers={true}
@@ -68,27 +68,27 @@ const Index = ({ project, pid }) => {
             building_type={building_type}
             project_type={project_types}
           />
-        </InnerContainer>
-        <AboveQuote content={above_quote} />
+        </InnerContainer> */}
+        {/* <AboveQuote content={above_quote} />
         {quote ? (
           <ProjectQuote quote={quote} attribution={quote_attribution} />
         ) : (
           <div className='my-8'></div>
         )}
 
-        <BelowQuote content={below_text_content} />
+        <BelowQuote content={below_text_content} /> */}
       </Container>
-      <RelatedProjects
+      {/* <RelatedProjects
         subCat={building_type.data.attributes.type}
         projId={id}
-      />
+      /> */}
     </>
   );
 };
 
 export async function getStaticPaths() {
   const res = await axios.get(
-    'https://adg-projects-hs6ir.ondigitalocean.app/api/projects?filters[department][name][$eq]=Commercial Interiors&populate=*'
+    'https://adg-projects-hs6ir.ondigitalocean.app/api/projects?filters[department][name][$eq]=Branding&populate=*'
   );
   const projects = await res.data.data;
 
