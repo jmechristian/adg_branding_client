@@ -10,7 +10,7 @@ const ProjectFilter = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: 'easeIn' }}
+        transition={{ duration: 0.5, delay: 1.25, ease: 'easeIn' }}
       >
         <Filter />
         <ProjectGrid />

@@ -7,14 +7,14 @@ export const categories = [
     name: 'Apartments',
     value: 'apartments',
   },
-  {
-    name: 'Condominiums & Townhomes',
-    value: 'condos',
-  },
-  {
-    name: 'Non-Profit',
-    value: 'nonprofit',
-  },
+  // {
+  //   name: 'Condominiums & Townhomes',
+  //   value: 'condos',
+  // },
+  // {
+  //   name: 'Non-Profit',
+  //   value: 'nonprofit',
+  // },
   // {
   //   name: 'Models',
   //   value: 'Model',
