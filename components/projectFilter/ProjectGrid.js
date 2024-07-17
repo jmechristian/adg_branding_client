@@ -18,7 +18,7 @@ const ProjectGrid = () => {
   console.log(orderedGrid);
 
   return (
-    <div className='mt-6 mb-10 lg:mt-8 lg:mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-5'>
+    <div className='mt-6 mb-10 lg:mt-8 lg:mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-5'>
       {orderedGrid.length > 0 ? (
         orderedGrid.map((proj) => (
           <ProjectItem
